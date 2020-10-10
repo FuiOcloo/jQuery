@@ -27,7 +27,12 @@ $(document).ready(function(){
         .animate({"opacity": 0.5, "margin-left":10},'fast')
         .animate({"opacity": 1, "margin-left":0},'fast');
     });
+    
     $('#container').on('click','.item-remove',function(){
        $(this).parent().remove(); 
+    });
+    
+    $.ajax('dada/item.json',function(response){
+        
     });
 });
