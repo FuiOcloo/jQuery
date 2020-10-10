@@ -13,12 +13,17 @@ $(document).ready(function(){
        html += '<button class="item-remove>Remove</button>';
            html += '<br/>';
            html += '<a href="#">More info</a>';
-           html += '<div class="more info">kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev 
-           '</div>';
+           html += '<div class="more info">kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev</div>';
           html += '</div>';
        
        $('#container').prepend(html);
    });
+    
+    $('container').on('click','more-info-link',function(event){
+        event.preventDefault();
+        
+        $(this).parent().find('.more-info').toggle();
+    });
     $('#container').on('click','.item-remove',function(){
        $(this).parent().remove(); 
     });
