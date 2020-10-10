@@ -9,13 +9,17 @@ $(document).ready(function(){
            html += '<img src="assets/fui.jpg"></img>';
            html += '<div class="description">loremnjnbdvb,hjb kjbvbevj jnevjnej ijveoi evijjevn</div>';
            html += '<div class="price">499</div>';
-           html += '<button>Add to cart</button>';
+           html += '<button class="item-add>Add to cart</button>';
+       html += '<button class="item-remove>Remove</button>';
            html += '<br/>';
            html += '<a href="#">More info</a>';
            html += '<div class="more info">kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev 
            '</div>';
           html += '</div>';
        
-       $('#container').append(html);
+       $('#container').prepend(html);
    });
+    $('#container').on('click','.item-remove',function(){
+       $(this).parent().remove(); 
+    });
 });
