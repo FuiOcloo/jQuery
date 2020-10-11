@@ -1,0 +1,18 @@
+{
+    "items":[{
+        "name": "New York",
+        "description": "loremnjnbdvb,hjb kjbvbevj jnevjnej ijveoi evijjevn",
+        "price": 499,
+        "moreInfo": "kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev"
+    },{
+        "name": "Recife",
+        "description": "loremnjnbdvb,hjb kjbvbevj jnevjnej ijveoi evijjevn",
+        "price": 499,
+        "moreInfo": "kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev"
+    },  {
+        "name": "Long Beach",
+        "description": "loremnjnbdvb,hjb kjbvbevj jnevjnej ijveoi evijjevn",
+        "price": 499,
+        "moreInfo": "kjhck fjhlvn fhvphnw evihpihvn vipjnve lvipinv svpivjnpvj vjpjev"
+    }]
+}
