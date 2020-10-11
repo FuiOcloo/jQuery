@@ -58,13 +58,38 @@ $(document).ready(function(){
            dadaType: 'json',
            contentType: 'application/json'
        }) 
-        .done(function(response)){
+        .done(function(response){
            if (response.message === 'success') {
            let price = response.price;
+           
            cart += price;
            
            $('#cart-container').text('$' + cart);
        }
-              }
+              });
+});
+
+    $('#newsletter-checkbox').on('change',function(){
+        if($(this).is(':checked')){
+            $('#newsletter-frequency').show();
+        } else{
+            $('#newsletter-frequency').hide();
+        }
+    });
+  $('#newsletter-checkbox').trigger('change');  
+    
+    $('#cart-form').on('submit',function(event){
+        event.preventDefault();
+     
+        let data = {form: $(this).serialize(), price: cart };
+        
+        $.ajax($(this).attr('action'), {
+            type: 'post',
+            data: data
+        })
+        .done(function(response){
+            $('#feedback-message').text(response.message);
+            alert(data.form +': ' + response.message);
+        });
     });
 });
