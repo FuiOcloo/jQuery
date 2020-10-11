@@ -33,6 +33,7 @@ $(document).ready(function(){
     });
     
     $.ajax('dada/item.json',function(response){
-        
+        console.long(response);
+    
     });
 });
